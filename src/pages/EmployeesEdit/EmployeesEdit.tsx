@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { useMatch, Navigate } from "react-router-dom";
 import { useAppDispatch } from '../../store/store'
 import { useSelector } from 'react-redux'
