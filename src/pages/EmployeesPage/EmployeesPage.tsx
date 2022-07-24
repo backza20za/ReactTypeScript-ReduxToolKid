@@ -69,12 +69,8 @@ const App: React.FC = () => {
     dispatch(getEmployees())
   }, [dispatch])
 
-  // const editBooks = (id: any) => {
-  //   navigate("/shopedit" + id)
-  // }
   return (
     <>
-
       <Button style={{ marginBottom: 10 }} onClick={() => {
         navigate("/addemployees")
       }}><PlusCircleOutlined />Add Employee</Button>

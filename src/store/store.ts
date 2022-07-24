@@ -9,7 +9,8 @@ const store = configureStore({
     reducer: {
         auth: authenReducer,
         employees: employeesReducer,
-    }
+    },
+    devTools: process.env.NODE_ENV === "development",
 })
 
 export type RootState = ReturnType<typeof store.getState>
