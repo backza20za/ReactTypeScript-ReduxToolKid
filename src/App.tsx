@@ -74,7 +74,7 @@ function App() {
             <Route path="/" element={<Navigate to={"/login"} />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/register" element={<RegisterPage />} />
-            {/* <Route path="*" element={<NotFound />} /> */}
+            <Route path="*" element={<NotFound />} />
           </Route>
           {/* protected Route */}
           <Route path='/' element={<ProtectedRoutes />}>
@@ -90,15 +90,15 @@ function App() {
 
 export default App;
 
-// const NotFound = () => {
-//   const navigate = useNavigate()
-//   React.useEffect(() => {
-//     navigate("/")
-//   }, [])
-//   return (
-//     <>
+const NotFound = () => {
+  const navigate = useNavigate()
+  React.useEffect(() => {
+    navigate("/")
+  }, [])
+  return (
+    <>
 
-//     </>
+    </>
 
-//   );
-// }
+  );
+}
