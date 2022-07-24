@@ -50,7 +50,7 @@ const LoginPage: React.FC = () => {
     const response = await dispatch(login(values))
 
     if (authendecate.status === "Success") {
-      navigate("/shop")
+      navigate("/employees")
     } else {
       setstatus(response.meta.requestStatus)
     }
